@@ -57,16 +57,16 @@ export default function NewJobForm() {
   return (
     <main className="m-auto my-10 max-w-3xl space-y-10">
       <div className="space-y-5 text-center">
-        <H1>Find your perfect developer</H1>
+        <H1>Encontre os melhores funcionários</H1>
         <p className="text-muted-foreground">
-          Get your job posting seen by thousands of job seekers.
+          A sua vaga será vista por milhares de pessoas.
         </p>
       </div>
       <div className="space-y-6 rounded-lg border p-4">
         <div>
-          <h2 className="font-semibold">Job details</h2>
+          <h2 className="font-semibold">Detalhes</h2>
           <p className="text-muted-foreground">
-            Provide a job description and details
+            Dê uma descrição e mais detalhes
           </p>
         </div>
         <Form {...form}>
@@ -80,7 +80,7 @@ export default function NewJobForm() {
               name="title"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Job title</FormLabel>
+                  <FormLabel>Título da vaga</FormLabel>
                   <FormControl>
                     <Input placeholder="e.g. Frontend Developer" {...field} />
                   </FormControl>
@@ -93,11 +93,11 @@ export default function NewJobForm() {
               name="type"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Job type</FormLabel>
+                  <FormLabel>Tipo</FormLabel>
                   <FormControl>
                     <Select {...field} defaultValue="">
                       <option value="" hidden>
-                        Select an option
+                        Selecione uma opção
                       </option>
                       {jobTypes.map((jobType) => (
                         <option key={jobType} value={jobType}>
@@ -115,7 +115,7 @@ export default function NewJobForm() {
               name="companyName"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Company</FormLabel>
+                  <FormLabel>Empresa</FormLabel>
                   <FormControl>
                     <Input {...field} />
                   </FormControl>
@@ -128,7 +128,7 @@ export default function NewJobForm() {
               name="companyLogo"
               render={({ field: { value, ...fieldValues } }) => (
                 <FormItem>
-                  <FormLabel>Company logo</FormLabel>
+                  <FormLabel>Logo</FormLabel>
                   <FormControl>
                     <Input
                       {...fieldValues}
@@ -149,7 +149,7 @@ export default function NewJobForm() {
               name="locationType"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Location</FormLabel>
+                  <FormLabel>Localização</FormLabel>
                   <FormControl>
                     <Select
                       {...field}
@@ -162,7 +162,7 @@ export default function NewJobForm() {
                       }}
                     >
                       <option value="" hidden>
-                        Select an option
+                        Selecione uma opção
                       </option>
                       {locationTypes.map((locationType) => (
                         <option key={locationType} value={locationType}>
@@ -180,7 +180,7 @@ export default function NewJobForm() {
               name="location"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Office location</FormLabel>
+                  <FormLabel>Localização do escritório</FormLabel>
                   <FormControl>
                     <LocationInput
                       onLocationSelected={field.onChange}
@@ -205,7 +205,7 @@ export default function NewJobForm() {
               )}
             />
             <div className="space-y-2">
-              <Label htmlFor="applicationEmail">How to apply</Label>
+              <Label htmlFor="applicationEmail">Como de candidatar</Label>
               <div className="flex justify-between">
                 <FormField
                   control={control}
@@ -220,7 +220,7 @@ export default function NewJobForm() {
                             type="email"
                             {...field}
                           />
-                          <span className="mx-2">or</span>
+                          <span className="mx-2">ou</span>
                         </div>
                       </FormControl>
                       <FormMessage />
@@ -255,7 +255,7 @@ export default function NewJobForm() {
               render={({ field }) => (
                 <FormItem>
                   <Label onClick={() => setFocus("description")}>
-                    Description
+                    Descrição
                   </Label>
                   <FormControl>
                     <RichTextEditor
@@ -274,7 +274,7 @@ export default function NewJobForm() {
               name="salary"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Salary</FormLabel>
+                  <FormLabel>Salário</FormLabel>
                   <FormControl>
                     <Input {...field} type="number" />
                   </FormControl>
@@ -283,7 +283,7 @@ export default function NewJobForm() {
               )}
             />
             <LoadingButton type="submit" loading={isSubmitting}>
-              Submit
+              Enviar
             </LoadingButton>
           </form>
         </Form>

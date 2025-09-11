@@ -8,10 +8,10 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: {
-    default: "Flow Jobs",
-    template: "%s | Flow Jobs",
+    default: "Vagas Dev",
+    template: "%s | Vagas Dev",
   },
-  description: "Find your dream developer job.",
+  description: "Encontre o seu funcionário perfeito.",
 };
 
 export default function RootLayout({
@@ -20,7 +20,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="pt-BR">
       <body className={`${inter.className} min-w-[350px]`}>
         <Navbar />
         {children}

@@ -6,28 +6,28 @@ export default function Footer() {
       <div className="mx-auto max-w-5xl space-y-5 px-3 py-5">
         <div className="flex flex-col justify-between gap-3 sm:flex-row sm:items-center">
           <div className="space-y-2">
-            <h3 className="text-xl font-semibold">Flow Jobs</h3>
+            <h3 className="text-xl font-semibold">Vagas Dev</h3>
             <p className="text-sm text-muted-foreground">
-              Connecting talents with opportunities
+              Conectando talentos e oportunidades
             </p>
           </div>
           <div className="flex flex-wrap gap-5 text-sm text-muted-foreground">
             <Link href="/about" className="hover:underline">
-              About Us
+              Sobre nós
             </Link>
             <Link href="/contact" className="hover:underline">
-              Contact
+              Contacto
             </Link>
             <Link href="/terms" className="hover:underline">
-              Terms of Service
+              Termos de Serviços
             </Link>
             <Link href="/privacy" className="hover:underline">
-              Privacy Policy
+              Política de privacidade
             </Link>
           </div>
         </div>
         <div className="text-center text-sm text-muted-foreground">
-          © {new Date().getFullYear()} Flow Jobs, Inc. All rights reserved.
+          © {new Date().getFullYear()} Vagas Dev, Inc. All rights reserved.
         </div>
       </div>
     </footer>

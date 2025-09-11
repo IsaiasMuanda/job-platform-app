@@ -43,7 +43,7 @@ export default forwardRef<HTMLInputElement, LocationInputProps>(
         />
         {locationSearchInput.trim() && hasFocus && (
           <div className="absolute z-20 w-full divide-y rounded-b-lg border-x border-b bg-background shadow-xl">
-            {!cities.length && <p className="p-3">No results found.</p>}
+            {!cities.length && <p className="p-3">Sem resultados.</p>}
             {cities.map((city) => (
               <button
                 key={city}

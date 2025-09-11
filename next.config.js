@@ -5,6 +5,9 @@ const nextConfig = {
       {
         hostname: "rqcoa3ubmzn9qpsj.public.blob.vercel-storage.com",
       },
+      {
+        hostname: "werrw9ab8jfgfuic.public.blob.vercel-storage.com",
+      },
     ],
   },
 };

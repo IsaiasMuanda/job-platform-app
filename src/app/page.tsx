@@ -20,8 +20,8 @@ function getTitle({ q, type, location, remote }: JobFilterValues) {
     : type
       ? `${type} developer jobs`
       : remote
-        ? "Remote developer jobs"
-        : "All developer jobs";
+        ? "Vags remotas"
+        : "Vagas para todos";
 
   const titleSuffix = location ? ` in ${location}` : "";
 
@@ -55,7 +55,7 @@ export default async function Home({
     <main className="m-auto my-10 max-w-5xl space-y-10 px-3">
       <div className="space-y-5 text-center">
         <H1>{getTitle(filterValues)}</H1>
-        <p className="text-muted-foreground">Find your dream job.</p>
+        <p className="text-muted-foreground">Encontre o seu emprego.</p>
       </div>
       <section className="flex flex-col gap-4 md:flex-row">
         <JobFilterSidebar defaultValues={filterValues} />

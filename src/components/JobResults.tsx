@@ -67,7 +67,7 @@ export default async function JobResults({
       ))}
       {jobs.length === 0 && (
         <p className="m-auto text-center">
-          No jobs found. Try adjusting your search filters.
+          Sem resultado.
         </p>
       )}
       {jobs.length > 0 && (
@@ -114,10 +114,10 @@ function Pagination({
         )}
       >
         <ArrowLeft size={16} />
-        Previous page
+        Página anterior
       </Link>
       <span className="font-semibold">
-        Page {currentPage} of {totalPages}
+        Página {currentPage} de {totalPages}
       </span>
       <Link
         href={generatePageLink(currentPage + 1)}
@@ -126,7 +126,7 @@ function Pagination({
           currentPage >= totalPages && "invisible",
         )}
       >
-        Next page
+        Próximo
         <ArrowRight size={16} />
       </Link>
     </div>

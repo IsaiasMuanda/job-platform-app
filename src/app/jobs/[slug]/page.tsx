@@ -58,7 +58,7 @@ export default async function Page({ params: { slug } }: PageProps) {
       <aside>
         <Button asChild>
           <a href={applicationLink} className="w-40 md:w-fit">
-            Apply now
+            Candidate-se
           </a>
         </Button>
       </aside>
